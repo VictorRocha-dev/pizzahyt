@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/menu.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sen:wght@400;700;800&display=swap");
+    </style>
+
+    <title>Pizzahyt | Cardapio</title>
+  </head>
+  <body>
+    <header class="header">
+      <!--Criação do container para a navegação do site- Victor Souza  -->
+
+      <nav class="navbar">
+        <a href="/index.html"><img src="/images/logo.svg" alt="" /></a>
+
+        <div>
+          <ul class="nav-pc" id="nav-pc">
+            <li><a href="/#ABT">Sobre nós</a></li>
+            <li><a href="/#LCZ">Localização</a></li>
+            <li><a href="/html/cardapio/index.html">Cardápio</a></li>
+            <li><a href="/html/contato/index.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="menubar">
+          <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+
+          <ul class="nav" id="nav">
+            <li><a href="/#ABT">Sobre nós</a></li>
+            <li><a href="/#LCZ">Localização</a></li>
+            <li><a href="/html/cardapio/index.html">Cardápio</a></li>
+            <li><a href="/html/contato/index.html">Contato</a></li>
+          </ul>
+
+          <div class="menu-bg" id="menu-bg"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="title">Cardápio</h1>
+
+      <div class="cardapio">
+        <div class="pizzas">
+          <h1>Pizzas</h1>
+
+          <h2>Margherita</h2>
+
+          <p>mozzarella fiordilatte ou com mozzarella de bufala</p>
+
+          <h2>Marinara</h2>
+
+          <p>tomate, alho, oregão e azeite</p>
+
+          <h2>Prosciutto e funghi</h2>
+
+          <p>
+            mozzarella, tomate, fiambre cozido, cogumelos, alcachofras e
+            azeitonas pretas.
+          </p>
+
+          <h2>Capricciosa</h2>
+
+          <p>tomate e mozzarella</p>
+
+          <h2>Quattro formaggi</h2>
+
+          <p>
+            provolone, parmigiano reggiano, mozzarella, stracchino ou fontina.
+          </p>
+
+          <h2>Ortolana/Vegetariana</h2>
+
+          <p>pimentos, beringelas e courgettes.</p>
+
+          <h2>Diavola</h2>
+
+          <p>
+            ítalo-americana apimentada do salame seco, carne de porco e bovina.
+          </p>
+        </div>
+
+        <div id="linha"></div>
+
+        <div class="bebidas">
+          <h1>bebidas</h1>
+
+          <h2>Refrigerantes</h2>
+          <p>Dolly, Coca-Cola, Pepsi e Guaraná Jesus</p>
+
+          <h2>Vinhos</h2>
+
+          <p>Merlot, Pinot Noir, Riesling Itálico e Pérgola</p>
+
+          <h2>Sucos</h2>
+
+          <p>Laranja, Uva, Maracujá e Abacaxi</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <!-- 3 divs pra separar os 3 elementos do footer, 
+                onde será possível adicionar um display 
+                flex, permitindo que os 3 elementos possam ficar 
+                um ao lado do outro -->
+        <div id="logo">
+          <img src="/images/logo-footer.svg" alt="PizzaHyt" />
+        </div>
+        <div id="contact">
+          <strong>Contatos</strong>
+          <p>contato@pizzahyt.com</p>
+          <p>+55 11 9999-9999</p>
+        </div>
+        <div id="social-media">
+          <strong>Redes Sociais</strong>
+          <div class="icons">
+            <img src="/images/instagram-logo.svg" alt="Instagram" />
+            <img src="/images/facebook-logo.svg" alt="Facebook" />
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

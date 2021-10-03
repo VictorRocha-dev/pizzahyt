@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="menu.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sen:wght@400;700;800&display=swap');
+    </style>
+
+    <title>Pizzahyt</title>
+</head>
+<body>
+
+    <header class="header">
+        <!--Criação do container para a navegação do site- Victor Souza  -->
+        
+        <nav class="navbar">
+
+            <a href="#"><img src="images/Logo.svg" alt=""></a>
+
+            <div>
+                <ul class="nav-pc" id="nav-pc">
+                    <li><a href="#ABT">Sobre nós</a></li>
+                    <li><a href="#LCZ">Localização</a></li>
+                    <li><a href="html/cardapio/">Cardápio</a></li>
+                    <li><a href="html/contato/index.html">Contato</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="menubar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+
+                <ul class="nav" id="nav">
+                    <li><a href="#ABT">Sobre nós</a></li>
+                    <li><a href="#LCZ">Localização</a></li>
+                    <li><a href="html/cardapio/">Cardápio</a></li>
+                    <li><a href="html/contato/index.html">Contato</a></li>
+                </ul>
+
+                <div class="menu-bg" id="menu-bg">
+
+                </div>
+                
+            </div>
+        </nav>  
+    </header>
+
+    <main class="main">
+        <section class="background-pizza">
+        </section>
+
+        <section class="about" id="ABT">
+            <div class="pizza-about">
+                <img id="pizza-about" src="/images/pizza-sbn.svg" alt="Pizza sendo fatiada">
+            </div>
+
+            <div id="linha"></div>
+
+            <div class="history">
+                <strong>seja bem-vindo a </strong><span>PizzaHyt</span>
+                <p>Nós somos a primeira pizzaria aberta no Brasil em 1910, com os imigrantes italianos. O bairro para essa recepção foi o São Caetano do Sul, na cidade de São Paulo. Contudo, no início, os brasileiros não haviam aderido tão bem o novo alimento. Só a partir de 1950 que o prato se tornou popular por todo o país.</p>
+            </div>
+        </section>
+
+
+        <section class="localization" id="LCZ">
+            <h1>Localização</h1>
+
+            <div class="maps">
+                <div id="map1">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.88422391039114!2d-46.575869671305504!3d-23.637528250544506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cb6c8a3d8f1%3A0x6069569c3c0cc6c0!2sEscola%20T%C3%A9cnica%20Estadual%20-%20ETEC%20Jorge%20Street!5e0!3m2!1spt-BR!2sbr!4v1633187799637!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                    <h3>SC - Etec Jorge Street</h3>
+                    <p>Rua Bell Aliance, 143 <br> São Caetano do Sul - SP <br> 09360-330</p>
+
+                    <h3>Horário de Funcionamento</h3>
+
+                    <p>Terça à Quinta - 19:00 às 23:00 <br> Sexta à Domingo - 18:30 às 00:30</p>
+
+                </div>
+    
+                <div id="map2">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.6267203889042!2d-46.455479285380626!3d-23.689303472213723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6bec10277be1%3A0x69ee2ec72952551e!2sE.E%20Maria%20Aparecida%20Damo%20Ferreira!5e0!3m2!1spt-BR!2sbr!4v1633187891138!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading>
+                    </iframe>
+
+                    <h3>SC - Etec Jorge Street</h3>
+                    <p>Rua Bell Aliance, 143 <br> São Caetano do Sul - SP <br> 09360-330</p>
+
+                    <h3>Horário de Funcionamento</h3>
+
+                    <p>Terça à Quinta - 19:00 às 23:00 <br> Sexta à Domingo - 18:30 às 00:30</p>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- 3 divs pra separar os 3 elementos do footer, 
+            onde será possível adicionar um display 
+            flex, permitindo que os 3 elementos possam ficar 
+            um ao lado do outro -->
+        <div id="logo">
+            <img src="/images/logo-footer.svg" alt="PizzaHyt">
+        </div>
+        <div id="contact">
+            <strong>Contatos</strong>
+            <p>contato@pizzahyt.com</p>
+            <p>+55 11 9999-9999</p>         
+        </div>
+        <div id="social-media">
+            <strong>Redes Sociais</strong>
+            <div class="icons">
+                <img src="/images/instagram-logo.svg" alt="Instagram">
+                <img src="/images/facebook-logo.svg" alt="Facebook">
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <div class="floatbutton">
+        <a href="html/cardapio/index.html"><img src="images/faça-seu=pedido.png" alt=""></a>
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+            
+
+
+
+

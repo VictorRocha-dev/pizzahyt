@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+}
+
+#title {
+  margin-top: 10vh;
+  text-align: center;
+  font-weight: bold;
+  color: #b50505;
+}
+
+.cardapio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+}
+.cardapio h1 {
+  color: #5db505;
+  margin-bottom: 50px;
+}
+.cardapio h2 {
+  color: #b50505;
+}
+
+.cardapio p {
+  margin-bottom: 50px;
+}
+.pizzas {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bebidas {
+  text-align: center;
+  margin-top: 50px;
+}
+#linha {
+  height: 800px;
+  border-right: 4px solid #b50505;
+  width: 3px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 760px) {
+  #linha {
+    display: none;
+  }
+  .cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,57 @@
+.footer {
+  background: #161616;
+  margin-top: 100px;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  height: 300px;
+  max-width: 100%;
+}
+
+#contact {
+  color: #fff;
+  font-family: "Sen", sans-serif;
+  line-height: 1.6;
+
+  font-size: 20px;
+}
+
+#contact strong {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#social-media {
+  font-family: "Sen", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#social-media img {
+  width: 30px;
+}
+
+#social-media strong {
+  font-size: clamp(2vw, 20px, 3vw);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}

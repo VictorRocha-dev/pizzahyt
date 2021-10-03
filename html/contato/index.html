@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/menu.js"></script>
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sen:wght@400;700;800&display=swap");
+    </style>
+
+    <title>Pizzahyt | Contato</title>
+  </head>
+  <body>
+    <header class="header">
+      <!--Criação do container para a navegação do site- Victor Souza  -->
+
+      <nav class="navbar">
+        <a href="/index.html"><img src="/images/logo.svg" alt="" /></a>
+
+        <div>
+          <ul class="nav-pc" id="nav-pc">
+            <li><a href="/#ABT">Sobre nós</a></li>
+            <li><a href="/#LCZ">Localização</a></li>
+            <li><a href="/html/cardapio/index.html">Cardápio</a></li>
+            <li><a href="/html/contato/index.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="menubar">
+          <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+
+          <ul class="nav" id="nav">
+            <li><a href="/#ABT">Sobre nós</a></li>
+            <li><a href="/#LCZ">Localização</a></li>
+            <li><a href="/html/cardapio/index.html">Cardápio</a></li>
+            <li><a href="/html/contato/index.html">Contato</a></li>
+          </ul>
+
+          <div class="menu-bg" id="menu-bg"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contato">
+        <h1>Contato</h1>
+        <p>
+          Entre em contato conosco preenchendo o formulário abaixo, tirando suas
+          dúvidas ou dando sugestões que responderemos através de e-mail, o mais
+          breve possível.
+        </p>
+
+        <form action="" class="contact">
+          <input type="text" name="name" id="name" placeholder="Nome" />
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <input
+            type="text"
+            name="celular"
+            id="celular"
+            placeholder="Celular"
+          />
+          <input
+            type="text"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone"
+          />
+
+          <textarea
+            placeholder="Digite sua Mensagem para nós: "
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+            
+          >
+          </textarea>
+
+          
+        </form>
+        <input type="submit" id="enviar" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- 3 divs pra separar os 3 elementos do footer, 
+            onde será possível adicionar um display 
+            flex, permitindo que os 3 elementos possam ficar 
+            um ao lado do outro -->
+      <div id="logo">
+        <img src="/images/logo-footer.svg" alt="PizzaHyt" />
+      </div>
+      <div id="contact">
+        <strong>Contatos</strong>
+        <p>contato@pizzahyt.com</p>
+        <p>+55 11 9999-9999</p>
+      </div>
+      <div id="social-media">
+        <strong>Redes Sociais</strong>
+        <div class="icons">
+          <img src="/images/instagram-logo.svg" alt="Instagram" />
+          <img src="/images/facebook-logo.svg" alt="Facebook" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="floatbutton">
+      <a href="/html/cardapio/index.html"><img src="/images/faça-seu=pedido.png" alt=""></a>
+  </div>
+  </body>
+</html>

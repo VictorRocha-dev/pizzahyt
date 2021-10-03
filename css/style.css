@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =======================================Main- About us========================== */
+
+.background-pizza {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 437px;
+}
+.about {
+  background-color: #ebc53f;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 150px;
+}
+
+#linha {
+  height: 200px;
+  border-right: 4px solid #b50505;
+  width: 3px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.history {
+  margin-left: 50px;
+}
+
+.history strong,
+span {
+  font-size: 20px;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+}
+
+.history span {
+  color: #b50505;
+}
+.history p {
+  margin-top: 10px;
+  max-width: 80%;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+}
+
+/* =======================================Main- Localização========================== */
+
+.localization h1 {
+  margin-top: 10vh;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #b50505;
+
+  text-align: center;
+}
+.maps {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#map2 {
+  margin-left: 40px;
+}
+
+.maps iframe {
+  width: 353px;
+  height: 156px;
+  text-align: center;
+}
+
+.maps h3 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.maps p {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.floatbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #F28484;
+  border-radius: 50%;
+
+
+  cursor: pointer;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.floatbutton:hover{
+  transition: 400ms;
+  background-color: #ebc53f;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-pc {
+    display: none;
+  }
+  .menubar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .maps {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+  }
+  #map2 {
+    margin-left: 0;
+  }
+
+  .maps iframe {
+    width: 300px;
+    height: 150px;
+  }
+
+  #pizza-about,
+  #linha {
+    display: none;
+  }
+  .history p {
+    max-width: 100%;
+  }
+
+  .about {
+    display: flex;
+    padding: 10px;
+  }
+}

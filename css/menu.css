@@ -1,0 +1,138 @@
+.header {
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+  font-size: 18px;
+  font-family: "Sen", sans-serif;
+  font-weight: bold;
+  color: #ffff;
+  text-decoration: none;
+  padding: 30px;
+}
+.navbar a:hover {
+  transition: 200ms;
+  color: #ebc53f;
+}
+.nav-pc {
+  list-style: none;
+  display: flex;
+}
+
+.menubar {
+  display: block;
+}
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.menubar {
+  display: none;
+}
+
+
+  
+
+
+@media screen and (max-width: 900px) {
+  .nav-pc {
+    display: none;
+  }
+
+  .navbar a:hover {
+    transition: 200ms;
+    color: #ebc53f;
+  }
+  .menubar {
+    display: block;
+  }
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ffff;
+    display: block;
+
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+    transition: ease-in .5s;
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+    transition: ease-in .5s;
+  }
+  .nav li {
+    list-style: none;
+    padding: 16px 0;
+  }
+  .nav {
+    display: none;
+    background-color: #ebc53f;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    
+    width: 100%;
+    padding: 20px;
+
+  }
+  .menu-bg,
+  #menu-bar {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background-color: #ebc53f;
+    animation: ease-in .5s;
+    animation-delay: 3s;
+   
+  }
+
+  .change .bar {
+    background-color: #fff;
+    transition: all  125ms ease-in;
+  }
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+    transition: ease-in .5s;
+    }
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+    transition: ease-in .5s;
+  }
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change {
+    display: block;
+    
+
+  }
+}
+
+
