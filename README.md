@@ -2,7 +2,7 @@
 
 
 ### Sobre
-É um projeto pessoal
+É um projeto pessoal que foi desenvolvido com <a href="https://github.com/davivsouza">Davi Vasconcelos</a>
 ##
 
 ### Objetivo 🎯
